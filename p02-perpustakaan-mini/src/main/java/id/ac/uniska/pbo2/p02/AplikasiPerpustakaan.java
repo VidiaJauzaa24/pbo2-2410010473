@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package id.ac.uniska.pbo2.p02;
+import java.util.List;
 
 public class AplikasiPerpustakaan {
 
@@ -31,6 +32,16 @@ public class AplikasiPerpustakaan {
 
         System.out.println("Koleksi tersedia: " + perpus.jumlahTersedia()
                 + " dari " + perpus.getDaftarKoleksi().size());
+        perpus.tambah(new Skripsi("S001", "Sistem Informasi Perpustakaan", 2026, "Siti Rahmah", "Teknik Informatika"));
+
+System.out.println();
+List<Koleksi> hasilCari = perpus.cariJudul("code");
+System.out.println("Hasil pencarian \"code\": " + hasilCari.size() + " koleksi");
+for (Koleksi k : hasilCari) {
+    System.out.println(k);
+}
+
+cetakPinjam(perpus, "S001", siti);
     }
 
     private static void tampilkanDaftar(Perpustakaan perpus) {
@@ -51,4 +62,5 @@ public class AplikasiPerpustakaan {
         System.out.println("Pengembalian " + kode + " terlambat " + hariTerlambat
                 + " hari, denda Rp" + denda);
     }
+    
 }
