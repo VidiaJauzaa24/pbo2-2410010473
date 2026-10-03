@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package id.ac.uniska.pbo2.p03;
+import com.formdev.flatlaf.FlatLightLaf;
 
 /**
  *
@@ -30,6 +31,7 @@ public class HaloSwing extends javax.swing.JFrame {
 
         pesanLabel = new javax.swing.JLabel();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Halo Swing");
 
         pesanLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
