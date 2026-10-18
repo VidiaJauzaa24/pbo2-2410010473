@@ -60,3 +60,8 @@ Keselarasan: semua label dan isian membentuk garis lurus di kolom yang sama (Gri
 ## Deklarasi Penggunaan AI
 
 Saya menggunakan Claude (Anthropic) sebagai asisten untuk membantu memahami konsep layout manager (BorderLayout, FlowLayout, GridLayout, BoxLayout, GridBagLayout), memandu langkah-langkah penggunaan GUI Builder NetBeans, membantu debugging error pada kode. Seluruh form (GaleriLayout, FormBiodata, FormAnggotaPerpustakaan) saya susun dan buat sendiri langsung di NetBeans mengikuti arahan tersebut.
+
+
+## Foto Tangkapan Layar
+
+![Foto](images/foto.png)
