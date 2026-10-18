@@ -31,7 +31,7 @@
 |---|---|---|
 | 1 | Label singkat, jelas, dan sejajar | Ya |
 | 2 | Isian dikelompokkan dengan judul bagian | Ya |
-| 3 | Placeholder dipakai untuk isian yang punya format | Ya |
+| 3 | Placeholder dipakai untuk isian yang punya format |Belum (kolom NPM belum ada placeholder)|
 | 4 | Komponen sesuai jenis data | Ya |
 | 5 | Tombol utama menonjol dan berada di kanan bawah | Ya |
 | 6 | Jarak antar komponen konsisten | Ya |
@@ -39,6 +39,7 @@
 | 8 | Tampilan dibuat dengan JFrame Form dan layout manager | Ya |
 
 Saran: 
+Saran: Kolom NPM sebaiknya diberi placeholder seperti kolom Email dan No HP, misalnya npmField.putClientProperty("JTextField.placeholderText", "Contoh: 2410010001") di konstruktor. Selain itu, radio button Jenis Anggota sebaiknya punya pilihan awal, yaitu mahasiswaRadio dicentang di properti selected.
 
 ## Pertanyaan Refleksi
 
