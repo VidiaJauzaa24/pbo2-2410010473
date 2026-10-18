@@ -68,8 +68,10 @@ Saya menggunakan Claude (Anthropic) sebagai asisten untuk membantu memahami kons
 ## 1. Sebelum Dilebarkan
 ![Sebelum Dilebarkan](<Sebelum di lebarkan.png>)
 
+
 ## 2. Setelah Dilebarkan
-![Setelah Dilebarkan](./Setelah%20di%20lebarkan.png)
+![Setelah Dilebarkan](./setelah-dilebarkan.png)
+
 
 ## 3. Sketsa
 ![Sketsa](Sketsa.jpeg)
