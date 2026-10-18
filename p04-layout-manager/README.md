@@ -63,5 +63,16 @@ Saya menggunakan Claude (Anthropic) sebagai asisten untuk membantu memahami kons
 
 
 ## Foto Tangkapan Layar
+# P04 - Layout Manager
 
-![Foto](images/foto.png)
+## 1. Sebelum Dilebarkan
+![Sebelum Dilebarkan](<Sebelum di lebarkan.png>)
+
+## 2. Setelah Dilebarkan
+![Setelah Dilebarkan](<Setelah di lebarkan.png>)
+
+## 3. Sketsa
+![Sketsa](Sketsa.jpeg)
+
+## 4. Tampilan Full
+![Tampilan Full](<Tampilan full.png>)
