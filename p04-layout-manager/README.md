@@ -76,3 +76,4 @@ Saya menggunakan Claude (Anthropic) sebagai asisten untuk membantu memahami kons
 
 ## 4. Tampilan Full
 ![Tampilan Full](<Tampilan full.png>)
+
