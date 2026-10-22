@@ -2,7 +2,7 @@
 
 **Mata Kuliah:** Pemrograman Berbasis Objek 2 (TIF1508)
 **Pertemuan:** 5 - Event Handling
-**Nama:** (isi nama lengkap)
+**Nama:** Vidia Jauzaa Shadidah
 **NPM:** 2410010473
 
 Proyek Maven `p05-event-handling` (package `id.ac.uniska.pbo2.p05`) berisi empat JFrame Form (masing-masing dengan file `.java` dan `.form`) dan satu kelas logika biasa:
