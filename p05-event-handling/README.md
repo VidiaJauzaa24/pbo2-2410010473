@@ -82,13 +82,13 @@ Logika penghitungan digit ditulis sekali di method `perbaruiJumlahDigit()`, lalu
 ## 5. Tangkapan Layar
 
 ### Jendela Properties bagian Events untuk tombol Daftar
-![Properties Events tombol Daftar](img/properties-daftar.png)
+![Properties Events tombol Daftar](properties-daftar.png)
 
 ### Dialog ringkasan
-![Dialog ringkasan](img/ringkasan.png)
+![Dialog ringkasan](ringkasan.png)
 
 ### Dialog konfirmasi keluar
-![Dialog konfirmasi keluar](img/konfirmasi-keluar.png)
+![Dialog konfirmasi keluar](konfirmasi-keluar.png)
 
 ---
 
