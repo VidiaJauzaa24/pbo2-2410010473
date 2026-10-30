@@ -37,7 +37,7 @@ Kelima label pesan (`npmPesanLabel`, `namaPesanLabel`, `prodiPesanLabel`, `email
 
 ![Navigator memperlihatkan label pesan](navigator-label-pesan.png)
 
-![Navigator memperlihatkan label pesan](navigator-label-pesan2.png)
+![Navigator memperlihatkan label pesan](navigator-label-pesan%20%282%29.png)
 
 ---
 
