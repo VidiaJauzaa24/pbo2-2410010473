@@ -36,6 +36,7 @@ Form setelah tombol **Daftar** diklik dengan data yang salah. Isian yang salah d
 Kelima label pesan (`npmPesanLabel`, `namaPesanLabel`, `prodiPesanLabel`, `emailPesanLabel`, `hpPesanLabel`) berada di `formPanel`, tepat di bawah isiannya pada GridBagLayout. `statusLabel` berada di `tombolPanel`.
 
 ![Navigator memperlihatkan label pesan](navigator-label-pesan.png)
+![Navigator memperlihatkan label pesan](navigator-label-pesan(2).png)
 
 ---
 
