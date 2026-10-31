@@ -47,6 +47,7 @@ at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatc
 at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
 at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
 at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)`.
+
 `initComponents()` dipanggil di awal konstruktor dan menjalankan `kontakTable.setModel(model)` dari Custom code. Saat itu `model` masih `null` karena baru dibuat setelah `initComponents()`, sehingga `JTable` menolaknya. Karena itu atribut `model` harus sudah dibuat saat dideklarasikan, sebelum `initComponents()` berjalan.
 ![Pesan error eksperimen 6](eksperimen-6-error.png)
 
