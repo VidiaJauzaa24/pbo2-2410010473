@@ -33,7 +33,22 @@ Ctrl+N bekerja kapan saja, sedangkan Ctrl+E dan Ctrl+D tidak bekerja saat tidak 
 Yang berubah adalah baris hapusItem.setAccelerator(...) di initComponents(). Sebelumnya KeyStroke.getKeyStroke(KeyEvent.VK_D, InputEvent.CTRL_DOWN_MASK), sesudahnya KeyStroke.getKeyStroke(KeyEvent.VK_DELETE, 0). Kode ini ditulis NetBeans dari pengaturan di tab Design, tidak diketik sendiri.
 
 **Eksperimen 6: atribut `model` dibuat setelah `initComponents()`**
-Muncul error ... (isi dengan pesan di Output) dan jendela tidak terbuka. initComponents() dipanggil di awal konstruktor dan menjalankan kontakTable.setModel(model) dari Custom code. Saat itu model masih null karena baru dibuat setelah initComponents(), sehingga tabel menolak model kosong. Karena itu atribut model harus sudah dibuat saat dideklarasikan, sebelum initComponents() berjalan.
+Jendela tidak terbuka, dan jendela Output menampilkan error `at java.desktop/javax.swing.JTable.setModel(JTable.java:376)
+at id.ac.uniska.pbo2.p07.AplikasiKontak.initComponents(AplikasiKontak.java:154)
+at id.ac.uniska.pbo2.p07.AplikasiKontak.<init>(AplikasiKontak.java:28)
+at id.ac.uniska.pbo2.p07.AplikasiKontak.lambda$main$0(AplikasiKontak.java:310)
+at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:323)
+at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:723)
+at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)`.
+![Pesan error eksperimen 6](eksperimen-6-error.png)
+
+`initComponents()` dipanggil di awal konstruktor dan menjalankan `kontakTable.setModel(model)` dari Custom code. Saat itu `model` masih `null` karena baru dibuat setelah `initComponents()`, sehingga `JTable` menolaknya. Karena itu atribut `model` harus sudah dibuat saat dideklarasikan, sebelum `initComponents()` berjalan.
 
 ## Deklarasi Penggunaan AI
 
