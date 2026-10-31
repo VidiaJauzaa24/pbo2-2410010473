@@ -75,7 +75,7 @@ Data tetap ada. Method `batal()` menampilkan konfirmasi jika `adaIsian()` bernil
 
 Dinilai oleh: (Ariefa Salsabilla Azzahra)
 
-![Lembar peer review dari teman](lembar-peer-review.ppg)
+![Lembar peer review dari teman](lembar-peer-review.png)
 
 ### 5.2 Tabel temuan dan perbaikan
 
