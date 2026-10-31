@@ -73,17 +73,24 @@ Data tetap ada. Method `batal()` menampilkan konfirmasi jika `adaIsian()` bernil
 
 ### 5.1 Lembar peer review yang saya terima
 
-Dinilai oleh: (isi nama teman)
+Dinilai oleh: (Ariefa Salsabilla Azzahra)
 
 ![Lembar peer review dari teman](lembar-peer-review.jpg)
 
 ### 5.2 Tabel temuan dan perbaikan
 
-| No | Heuristik | Temuan dari teman | Skor | Perbaikan yang saya lakukan | Commit |
-|----|-----------|-------------------|------|------------------------------|--------|
-| 1 | (isi) | (isi) | (isi) | (isi) | (isi hash atau pesan commit) |
-| 2 | (isi) | (isi) | (isi) | (isi) | (isi) |
-| 3 | (isi) | (isi) | (isi) | (isi) | (isi) |
+| No | Heuristik | Temuan | Skor 0-4 | Saran |
+|----|-----------|-------------------|------|------------------------------|
+| 1 | Visibilitas status sistem |Ringkasan jumlah kesalahan muncul saat Daftar diklik, pesan sukses muncul, tombol Daftar nonaktif sebelum persetujuan dicentang, dan ada penghitung “0 dari 10 digit” pada NPM| 0 | - |
+| 2 | Kesesuaian dengan dunia nyata | Bahasa pesan mudah dipahami, tidak teknis | 0 | - |
+| 3 | Kendali dan kebebasan pengguna | Istilah dan gaya pesan seragam, posisi pesan kesalahan selalu sama| 0 | - |
+| 4 | Konsistensi dan standar | Istilah dan gaya pesan seragam, posisi pesan kesalahan selalu sama | 0 | - |
+| 5 | Pencegahan kesalahan | NPM dan nomor HP menolak huruf, NPM berhenti di 10 digit, Daftar nonaktif sebelum persetujuan dicentang | 0 | - |
+| 6 | Mengenali, bukan mengingat | Ada placeholder contoh format dan label isian jelas | 0 | - |
+| 7 | Fleksibilitas dan efisiensi | Alt + huruf berpindah ke isian yang benar dan urutan Tab sesuai, tetapi tombol Enter tidak memicu Daftar | 1 | Jadikan Daftar sebagai tombol bawaan (default button) lewat getRootPane().setDefaultButton(daftarButton); di konstruktor |
+| 8 | Desain estetis dan minimalis | Tampilan rapi, tidak ada yang terpotong atau bertumpuk | 0 | - |
+| 9 | Membantu memperbaiki kesalahan | Pesan menyebut isian yang salah beserta cara memperbaikinya, fokus pindah ke kesalahan pertama, ada teks pesan selain warna merah | 0 | - |
+| 10 | Bantuan dan dokumentasi | Ada tooltip “Hanya angka, tepat 10 digit” pada isian NPM, dan kursor langsung berada di isian NPM saat form dibuka | 0 | - |
 
 Temuan dengan skor 3 dan 4 diperbaiki, dan perbaikannya dapat ditelusuri pada commit yang tercantum di kolom terakhir.
 
