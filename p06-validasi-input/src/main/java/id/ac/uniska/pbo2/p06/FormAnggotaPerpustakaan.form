@@ -206,11 +206,12 @@
             <Component class="javax.swing.JComboBox" name="prodiCombo">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="4">
+                  <StringArray count="5">
                     <StringItem index="0" value="Pilih program studi"/>
                     <StringItem index="1" value="Teknik Informatika"/>
                     <StringItem index="2" value="Sistem Informasi"/>
-                    <StringItem index="3" value="Manajemen Informasi"/>
+                    <StringItem index="3" value="Manajemen Informatika"/>
+                    <StringItem index="4" value=" "/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -260,9 +261,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Mahasiswa"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mahasiswaRadioActionPerformed"/>
-                  </Events>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="dosenRadio">
                   <Properties>
@@ -279,9 +277,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Umum"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="umumRadioActionPerformed"/>
-                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -336,7 +331,6 @@
             <Component class="javax.swing.JTextField" name="hpField">
               <Events>
                 <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="hpFieldFocusLost"/>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hpFieldActionPerformed"/>
                 <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="hpFieldKeyTyped"/>
               </Events>
               <Constraints>
@@ -386,7 +380,6 @@
               </Properties>
               <Events>
                 <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="setujuCheckItemStateChanged"/>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="setujuCheckActionPerformed"/>
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">

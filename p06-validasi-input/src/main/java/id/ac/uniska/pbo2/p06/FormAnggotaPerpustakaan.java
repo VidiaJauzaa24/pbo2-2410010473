@@ -207,7 +207,7 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 6, 12);
         formPanel.add(prodiLabel, gridBagConstraints);
 
-        prodiCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih program studi", "Teknik Informatika", "Sistem Informasi", "Manajemen Informasi" }));
+        prodiCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih program studi", "Teknik Informatika", "Sistem Informasi", "Manajemen Informatika", " " }));
         prodiCombo.addItemListener(this::prodiComboItemStateChanged);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -231,7 +231,6 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
 
         jenisGroup.add(mahasiswaRadio);
         mahasiswaRadio.setText("Mahasiswa");
-        mahasiswaRadio.addActionListener(this::mahasiswaRadioActionPerformed);
         jenisPanel.add(mahasiswaRadio);
 
         jenisGroup.add(dosenRadio);
@@ -240,7 +239,6 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
 
         jenisGroup.add(umumRadio);
         umumRadio.setText("Umum");
-        umumRadio.addActionListener(this::umumRadioActionPerformed);
         jenisPanel.add(umumRadio);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -297,7 +295,6 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
                 hpFieldFocusLost(evt);
             }
         });
-        hpField.addActionListener(this::hpFieldActionPerformed);
         hpField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 hpFieldKeyTyped(evt);
@@ -336,7 +333,6 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         setujuCheck.setMnemonic('T');
         setujuCheck.setText("Setuju dengan tata tertib perpustakaan");
         setujuCheck.addItemListener(this::setujuCheckItemStateChanged);
-        setujuCheck.addActionListener(this::setujuCheckActionPerformed);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 14;
@@ -399,24 +395,8 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void mahasiswaRadioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mahasiswaRadioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_mahasiswaRadioActionPerformed
-
-    private void umumRadioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_umumRadioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_umumRadioActionPerformed
-
-    private void hpFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hpFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hpFieldActionPerformed
-
-    private void setujuCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setujuCheckActionPerformed
-        daftarButton.setEnabled(setujuCheck.isSelected());
-    }//GEN-LAST:event_setujuCheckActionPerformed
-
     private void setujuCheckItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_setujuCheckItemStateChanged
-        // TODO add your handling code here:
+        daftarButton.setEnabled(setujuCheck.isSelected());
     }//GEN-LAST:event_setujuCheckItemStateChanged
 
     private void batalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_batalButtonActionPerformed
