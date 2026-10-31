@@ -87,12 +87,14 @@ Dinilai oleh: (Ariefa Salsabilla Azzahra)
 | 4 | Konsistensi dan standar | Istilah dan gaya pesan seragam, posisi pesan kesalahan selalu sama | 0 | - |
 | 5 | Pencegahan kesalahan | NPM dan nomor HP menolak huruf, NPM berhenti di 10 digit, Daftar nonaktif sebelum persetujuan dicentang | 0 | - |
 | 6 | Mengenali, bukan mengingat | Ada placeholder contoh format dan label isian jelas | 0 | - |
-| 7 | Fleksibilitas dan efisiensi | Alt + huruf berpindah ke isian yang benar dan urutan Tab sesuai, tetapi tombol Enter tidak memicu Daftar | 1 | Jadikan Daftar sebagai tombol bawaan (default button) lewat getRootPane().setDefaultButton(daftarButton); di konstruktor |
+| 7 | Fleksibilitas dan efisiensi | Alt + huruf dan urutan Tab sudah sesuai, tetapi tombol Enter tidak memicu Daftar | 1 | `hpField` memiliki ActionListener kosong yang membuat Enter di isian No HP tidak diteruskan ke tombol bawaan. Event itu dihapus lewat Events, sehingga Enter menjalankan Daftar dari semua isian. Daftar tetap menjadi tombol bawaan lewat `getRootPane().setDefaultButton(daftarButton);` | `b832d1e` |
 | 8 | Desain estetis dan minimalis | Tampilan rapi, tidak ada yang terpotong atau bertumpuk | 0 | - |
 | 9 | Membantu memperbaiki kesalahan | Pesan menyebut isian yang salah beserta cara memperbaikinya, fokus pindah ke kesalahan pertama, ada teks pesan selain warna merah | 0 | - |
 | 10 | Bantuan dan dokumentasi | Ada tooltip “Hanya angka, tepat 10 digit” pada isian NPM, dan kursor langsung berada di isian NPM saat form dibuka | 0 | - |
 
-Temuan dengan skor 3 dan 4 diperbaiki, dan perbaikannya dapat ditelusuri pada commit yang tercantum di kolom terakhir.
+Sembilan heuristik lainnya mendapat skor 0, jadi tidak ada temuan skor 3 atau 4. Temuan nomor 7 tetap saya perbaiki agar Enter dapat dipakai sebagai jalan pintas.
+
+Selain temuan teman, saat memeriksa kode saya menemukan tombol Daftar tetap aktif setelah form dikosongkan. Logika kotak persetujuan saya pindahkan dari `actionPerformed` ke `itemStateChanged` agar ikut berjalan saat `setSelected(false)` dipanggil di `kosongkan()`. Perbaikan ini ada pada commit yang sama (`b832d1e`, pesan commit: "P06: perbaiki Enter di isian No HP dan reset tombol").
 
 ---
 
