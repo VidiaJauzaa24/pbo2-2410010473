@@ -5,7 +5,7 @@
 
 ## Video Demo
 
-Tautan video demo (maksimal 3 menit): (isi tautan video)
+Tautan video demo (maksimal 3 menit): https://drive.google.com/file/d/1peRIHz1GB-kLxIOyS3Aqc9J83b_V1ed7/view?usp=sharing
 
 ## Peta Event
 
