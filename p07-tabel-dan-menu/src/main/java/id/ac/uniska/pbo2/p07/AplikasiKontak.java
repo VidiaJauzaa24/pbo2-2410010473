@@ -27,6 +27,7 @@ public class AplikasiKontak extends javax.swing.JFrame {
 public AplikasiKontak() {
     initComponents();
     setJMenuBar(jMenuBar1);
+ 
 
     // Kode tambahan yang tidak tersedia di jendela Properties
     cariField.putClientProperty("JTextField.placeholderText", "Cari nama, telepon, email");
